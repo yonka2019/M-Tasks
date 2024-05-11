@@ -5,11 +5,16 @@ import ex1Tests
 import ex2Tests
 import ex3Tests
 import ex4Tests
+import ex5Tests
 
 
 def main():
     os.system('color')
-    test_classes = [ex1Tests, ex2Tests, ex3Tests, ex4Tests]
+    test_classes = [ex1Tests,
+                    ex2Tests,
+                    ex3Tests,
+                    #ex4Tests,
+                    ex5Tests]
 
     for tc in test_classes:  # iterate all test classes and execute all test functions
         print(f"{colored(f"\n-- {tc.__name__} --\n", "light_red")}")
