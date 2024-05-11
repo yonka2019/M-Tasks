@@ -30,7 +30,7 @@ def test4():
 
 
 def test5():
-    i = 0
+    i = 1
 
     o = ex1.num_len(i)
     return i, o

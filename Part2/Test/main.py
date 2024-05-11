@@ -3,40 +3,21 @@ from termcolor import colored
 
 import ex1Tests
 import ex2Tests
+import ex3Tests
 
 
 def main():
     os.system('color')
+    test_classes = [ex1Tests, ex2Tests, ex3Tests]
 
-    # Tests - ex1
-    print(f"{colored("-- ex1 --", "light_red")}")
+    for tc in test_classes:  # iterate all test classes and execute all test functions
+        print(f"{colored(f"\n-- {tc.__name__} --\n", "light_red")}")
 
-    (i, o) = ex1Tests.test1()
-    print_io("[ex1] Test 1", i, o)
-
-    (i, o) = ex1Tests.test2()
-    print_io("[ex1] Test 2", i, o)
-
-    (i, o) = ex1Tests.test3()
-    print_io("[ex1] Test 3", i, o)
-
-    (i, o) = ex1Tests.test4()
-    print_io("[ex1] Test 4", i, o)
-
-    print(f"{colored("-- ex2 --", "light_red")}")
-
-    # Tests - ex2
-    (i, o) = ex2Tests.test1()
-    print_io("[ex2] Test 1", i, o)
-
-    (i, o) = ex2Tests.test2()
-    print_io("[ex2] Test 2", i, o)
-
-    (i, o) = ex2Tests.test3()
-    print_io("[ex2] Test 3", i, o)
-
-    (i, o) = ex2Tests.test4()
-    print_io("[ex2] Test 4", i, o)
+        method_list = [func for func in dir(tc) if callable(getattr(tc, func))]
+        for idx, m in enumerate(method_list):
+            c_m = getattr(tc, m)
+            (i, o) = c_m()
+            print_io(f"[{tc.__name__} - {idx + 1}]", i, o)
 
 
 def print_io(name, i, o):
