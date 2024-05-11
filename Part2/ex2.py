@@ -1,4 +1,9 @@
 def pythagorean_triplet_by_sum(num):
+    """
+    returns all pythagorean triples which sums into the required number
+    :param num: number which presents sum of pythagorean triplet
+    :return: list of all pythagorean triples which sums into the required number
+    """
     triplet = []
 
     if (num > 0) and (type(num) is int):
