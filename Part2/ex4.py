@@ -3,8 +3,21 @@ from scipy.stats import pearsonr
 
 
 def numbers_func():
-    nums = []
+    """
+    the function reads an input from the user and do some manipulations on the received numbers
+    """
+    nums = __get_numbers_input()
 
+    avg = __count_average(nums)
+    pnums = __count_positive_numbers(nums)
+    sorted_list = __sort_numbers(nums)
+    correlation_coefficient = __show_plot(nums)
+
+    return f"Average: {avg}", f"Positive numbers: {pnums}", f"Sorted numbers: {sorted_list}", f"Correlation coefficient: {correlation_coefficient}"
+
+
+def __get_numbers_input():
+    nums = []
     while True:
         _input = input("Enter number (until -1): ")
 
@@ -15,12 +28,7 @@ def numbers_func():
         if _input.replace(".", "").replace("-", "").isdigit():
             nums.append(float(_input))
 
-    avg = __count_average(nums)
-    pnums = __count_positive_numbers(nums)
-    sorted_list = __sort_numbers(nums)
-    correlation_coefficient = __show_plot(nums)
-
-    return f"Average: {avg}", f"Positive numbers: {pnums}", f"Sorted numbers: {sorted_list}", f"Correlation coefficient: {correlation_coefficient}"
+    return nums
 
 
 def __count_average(nums):
