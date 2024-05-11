@@ -43,19 +43,6 @@ def __count_positive_numbers(nums):
     return pnums
 
 
-def __find_min(nums):
-    if len(nums) > 0:
-        min_value = nums[0]
-
-        for num in nums:
-            if num < min_value:
-                min_value = num
-
-        return min_value
-    else:
-        return None
-
-
 def __sort_numbers(nums):
     sorted_nums = list(nums)  # duplicating numbers list because I should only show the sorted numbers (not change the original list!)
 
