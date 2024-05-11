@@ -13,7 +13,7 @@ def main():
     test_classes = [ex1Tests,
                     ex2Tests,
                     ex3Tests,
-                    #ex4Tests,
+                    ex4Tests,
                     ex5Tests]
 
     for tc in test_classes:  # iterate all test classes and execute all test functions
