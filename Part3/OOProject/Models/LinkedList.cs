@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using OOProject.Utilities;
+using System.Collections.Generic;
 
 namespace OOProject
 {
     internal class LinkedList
     {
-        private Node head;
-        private Node tail;
+        private Node head, tail;
+        private Node MaxNode, MinNode;
 
         public override string ToString()
         {
@@ -32,28 +33,44 @@ namespace OOProject
 
         internal void Append(int value)
         {
+            Node newNode = new Node(value);
+
             if (head == null)
             {
-                head = new Node(value);
+                MaxNode = newNode; MinNode = newNode;
+
+                head = newNode;
                 tail = head;
             }
             else
             {
-                tail.Next = new Node(value);
+                tail.Next = newNode;
                 tail = tail.Next;
             }
         }
 
         internal void Prepend(int value)
         {
+            Node newNode = new Node(value, head);  // if head is null ?. will stop the function here and return null (to prevent 'Null Exception')
+
             if (head == null)
-                head = new Node(value);
+            {
+                MaxNode = newNode; MinNode = newNode;
+                head = newNode;
+            }
             else
-                head = new Node(value, head.Next);
+            {
+                MaxNode = MaxNode.FindMaxNode(newNode); MinNode = MinNode.FindMinNode(newNode);
+                head = newNode;
+            }
         }
 
         internal int? Pop()
         {
+            if (head == null)
+                return null;
+
+
             int value;
             Node ptr = head;
 
@@ -68,20 +85,27 @@ namespace OOProject
             ptr.Next = null;
             tail = ptr;
 
+
+            MaxNode = head.FindMaxNode();
+            MinNode = head.FindMinNode();
+
             return value;
         }
 
         internal int? Unqueue()
         {
+            if (head == null)
+                return null;
+
+
             int value;
 
-            if (head != null)
-            {
-                value = head.Value;
-                head = head.Next;
-            }
-            else
-                return null;
+            value = head.Value;
+            head = head.Next;
+
+
+            MaxNode = head.FindMaxNode();
+            MinNode = head.FindMinNode();
 
             return value;
         }
@@ -107,68 +131,17 @@ namespace OOProject
 
         internal void Sort()
         {
-            head = MergeSort(head);
+            head = head.MergeSort();
         }
 
-        private Node MergeSort(Node head)
+        internal Node GetMaxNode()
         {
-            if (head == null || head.Next == null)
-                return head;
+            return MaxNode;
+        }
 
-            Node middle = GetMiddle(head);
-            Node nextofmiddle = middle.Next;
-
-            middle.Next = null;  // reset next node
-
-            Node left = MergeSort(head);
-            Node right = MergeSort(nextofmiddle);
-
-            Node sortedList = InnerSort(left, right);
-            return sortedList;
-
-
-            Node InnerSort(Node a, Node b)
-            {
-                Node h;
-
-                if (a == null)
-                    return b;
-
-                else if (b == null)
-                    return a;
-
-                if (a.Value <= b.Value)
-                {
-                    h = a;
-                    h.Next = InnerSort(a.Next, b);
-                }
-                else
-                {
-                    h = b;
-                    h.Next = InnerSort(a, b.Next);
-                }
-                return h;
-            }
-
-            Node GetMiddle(Node _head)
-            {
-                if (_head == null)
-                    return _head;
-
-                Node fastptr = _head.Next
-                Node slowptr = _head;
-
-                while (fastptr != null)
-                {
-                    fastptr = fastptr.Next;
-                    if (fastptr != null)
-                    {
-                        slowptr = slowptr.Next;
-                        fastptr = fastptr.Next;
-                    }
-                }
-                return slowptr;
-            }
+        internal Node GetMinNode()
+        {
+            return MinNode;
         }
     }
 }
