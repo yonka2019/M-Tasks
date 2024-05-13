@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{55D5E66A-1769-48D8-A7F2-9D5A078B061E}</ProjectGuid>
+    <ProjectGuid>{0D008377-58F2-4EDD-9E2C-ED1137BBDAB5}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>OOProject</RootNamespace>
-    <AssemblyName>OOProject</AssemblyName>
+    <RootNamespace>Game2048</RootNamespace>
+    <AssemblyName>Game2048</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,14 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\LangSettings\EnglishSettings.cs" />
-    <Compile Include="Models\LangSettings\ILangSettings.cs" />
-    <Compile Include="Models\LinkedList.cs" />
-    <Compile Include="Models\Node.cs" />
-    <Compile Include="Models\NumericalExpression.cs" />
+    <Compile Include="Enums\GameStatus.cs" />
+    <Compile Include="Enums\Direction.cs" />
+    <Compile Include="Models\ConsoleColored.cs" />
+    <Compile Include="Models\ConsoleGame.cs" />
+    <Compile Include="Models\Game.cs" />
+    <Compile Include="Models\Board.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utilities\Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

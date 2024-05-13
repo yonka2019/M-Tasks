@@ -8,7 +8,12 @@ namespace OOProject
     {
         private static void Main(string[] args)
         {
-            //TestLL();
+            Console.WriteLine("LinkedList Tests:");
+            TestLL();
+
+            Console.WriteLine("\n");
+
+            Console.WriteLine("NumericalExpression Tests:");
             TestNum();
 
             Console.ReadKey();
