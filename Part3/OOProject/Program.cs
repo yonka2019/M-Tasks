@@ -1,4 +1,5 @@
-﻿using OOProject.Utilities;
+﻿using OOProject.Models;
+using OOProject.Utilities;
 using System;
 
 namespace OOProject
@@ -7,7 +8,8 @@ namespace OOProject
     {
         private static void Main(string[] args)
         {
-            TestLL();
+            //TestLL();
+            TestNum();
 
             Console.ReadKey();
         }
@@ -52,6 +54,41 @@ namespace OOProject
 
             Console.WriteLine($"Linked List - Max Node Value: {ll.GetMaxNode().Value}");
             Console.WriteLine($"Linked List - Min Node Value: {ll.GetMinNode().Value}");
+        }
+
+        private static void TestNum()
+        {
+            PrintTestNum(0);
+            PrintTestNum(1);
+            PrintTestNum(2);
+            PrintTestNum(20);
+            PrintTestNum(23);
+            PrintTestNum(2304);
+            PrintTestNum(2304431);
+            PrintTestNum(230443141);
+            PrintTestNum(23044314121);
+            PrintTestNum(999999999999);
+            Console.WriteLine();
+            Console.WriteLine();
+
+            Console.WriteLine("SumLetters for 1");
+            Console.WriteLine(NumericalExpression.SumLetters(1));
+            Console.WriteLine();
+
+
+            Console.WriteLine("SumLetters for 3");
+            Console.WriteLine(NumericalExpression.SumLetters(new NumericalExpression(3)));
+
+            Console.WriteLine("SumLetters for 50");
+            Console.WriteLine(NumericalExpression.SumLetters(new NumericalExpression(50)));
+
+            void PrintTestNum(ulong n)
+            {
+                NumericalExpression ne = new NumericalExpression(n);
+                Console.WriteLine($"{n} : {ne}");
+                Console.WriteLine();
+                Console.WriteLine();
+            }
         }
     }
 }

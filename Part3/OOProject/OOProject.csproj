@@ -43,8 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Languages\EnglishSettings.cs" />
+    <Compile Include="Models\Languages\ILangSettings.cs" />
     <Compile Include="Models\LinkedList.cs" />
     <Compile Include="Models\Node.cs" />
+    <Compile Include="Models\NumericalExpression.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\Utils.cs" />
