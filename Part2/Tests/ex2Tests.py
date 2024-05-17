@@ -1,4 +1,4 @@
-from Part2 import ex2
+from Modules import ex2
 
 
 def test1():
