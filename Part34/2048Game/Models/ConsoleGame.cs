@@ -110,7 +110,7 @@ namespace Game2048.Models
 
         private void ShowPoints()
         {
-            ConsoleColored.WriteLine($"~ Current Points: {game.Points} (Best result: {Properties.Settings.Default.BestPoints} Points)", ConsoleColor.White);
+            ConsoleColored.WriteLine($"~ Current Points: {game.Points} (Best result: {Properties.Settings.Default.BestPoints} Points)", ConsoleColor.Magenta);
             Console.WriteLine();
         }
 

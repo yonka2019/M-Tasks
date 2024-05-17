@@ -32,7 +32,7 @@ namespace OOProject
             ll.Prepend(-5);
 
 
-            Console.WriteLine("Linked List Representation:\n" +
+            Console.WriteLine("Linked List Representation (after appending):\n" +
                 ll);
             Console.WriteLine("\n");
 

@@ -129,7 +129,7 @@ namespace Game2048.Models
                                     Data[i, j - 1] = 0;
                                     points += Data[i, j];
 
-                                    lastMerged = true;  // avoid situations like:  [2, 2, 4, 0] ; 2 & 2 merged => [0, 4, 4, 0] (4 & 4 SHOULDN'T be merged)
+                                    lastMerged = true;  // avoid situations like:  [2, 2, 4, 0] ; 2 & 2 merged => [0, 0, 4,40] (4 & 4 SHOULDN'T be merged)
                                 }
                             }
                         }
@@ -141,7 +141,7 @@ namespace Game2048.Models
             }
             void MoveItems()
             {
-                for (int c = 0; c < 3; c++)
+                for (int c = 0; c < Data.GetLength(0) - 1; c++)
                 {
                     for (int i = 0; i < Data.GetLength(0); i++)  // row
                     {
@@ -199,7 +199,7 @@ namespace Game2048.Models
             }
             void MoveItems()
             {
-                for (int c = 0; c < 3; c++)
+                for (int c = 0; c < Data.GetLength(0) - 1; c++)
                 {
                     for (int i = 0; i < Data.GetLength(0); i++)  // row
                     {
@@ -257,7 +257,7 @@ namespace Game2048.Models
             }
             void MoveItems()
             {
-                for (int c = 0; c < 3; c++)
+                for (int c = 0; c < Data.GetLength(0) - 1; c++)
                 {
                     for (int i = Data.GetLength(0) - 1; i > 0; i--)  // row
                     {
@@ -315,7 +315,7 @@ namespace Game2048.Models
             }
             void MoveItems()
             {
-                for (int c = 0; c < 3; c++)
+                for (int c = 0; c < Data.GetLength(0) - 1; c++)
                 {
                     for (int i = 0; i < Data.GetLength(0) - 1; i++)  // row
                     {
