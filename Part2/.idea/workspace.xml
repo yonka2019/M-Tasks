@@ -4,21 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c88eb041-06eb-43b1-9648-1d28e59cd81f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Mamas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Mamas.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="c88eb041-06eb-43b1-9648-1d28e59cd81f" name="Changes" comment="build&amp;refactor: IDEA files added &amp; project re-organized">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/ex1Tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/ex1Tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/ex2Tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/ex2Tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/ex3Tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/ex3Tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/ex4Tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/ex4Tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/ex5Tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/ex5Tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/ex1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/ex2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/ex3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex4.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/ex4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex5.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/ex5.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,14 +21,14 @@
     &quot;assignee&quot;: &quot;yonka2019&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/yonka2019/M-Tasks.git",
-    "accountId": "3e586234-14cc-438e-859e-435613a2015e"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/yonka2019/M-Tasks.git&quot;,
+    &quot;accountId&quot;: &quot;3e586234-14cc-438e-859e-435613a2015e&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 4
+  &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2gHObAAdLAuawunAKWt9yrIxoJx" />
   <component name="ProjectViewState">
@@ -53,8 +40,9 @@
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "dev",
+    "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/jonatan_cyray/PycharmProjects/M-Tasks/Part2/Tests/main.py",
-    "settings.editor.selected.configurable": "settings.sync"
+    "settings.editor.selected.configurable": "configurable.group.editor"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -68,6 +56,9 @@
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="SDK_NAME" value="Python 3.12 (Part2)" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -92,6 +83,9 @@
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\jonatan_cyray\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c88eb041-06eb-43b1-9648-1d28e59cd81f" name="Changes" comment="" />
@@ -100,7 +94,20 @@
       <option name="presentableId" value="Default" />
       <updated>1715351105213</updated>
     </task>
+    <task id="LOCAL‎-00001" summary="build&amp;refactor: IDEA files added &amp; project re-organized">
+      <option name="closed" value="true" />
+      <created>1715979902554</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL‎-00001" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1715979902554</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="build&amp;refactor: IDEA files added &amp; project re-organized" />
+    <option name="LAST_COMMIT_MESSAGE" value="build&amp;refactor: IDEA files added &amp; project re-organized" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
