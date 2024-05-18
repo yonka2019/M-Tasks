@@ -6,14 +6,14 @@ namespace OOProject
 {
     internal class Program
     {
-        private static void Main(string[] args)
+        private static void Main()
         {
-            Console.WriteLine("LinkedList Tests:");
+            Console.WriteLine("### LinkedList Tests ###\n");
             TestLL();
 
             Console.WriteLine("\n");
 
-            Console.WriteLine("NumericalExpression Tests:");
+            Console.WriteLine("### NumericalExpression Tests ###\n");
             TestNum();
 
             Console.ReadKey();
