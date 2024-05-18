@@ -10,6 +10,7 @@ import ex5Tests
 
 def main():
     os.system('color')
+
     test_classes = [ex1Tests,
                     ex2Tests,
                     ex3Tests,

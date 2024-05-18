@@ -2,14 +2,14 @@ from Modules import ex1
 
 
 def test1():
-    i = 543221
+    i = 1234
 
     o = ex1.num_len(i)
     return i, o
 
 
 def test2():
-    i = 1243456
+    i = 124356
 
     o = ex1.num_len(i)
     return i, o
@@ -23,7 +23,7 @@ def test3():
 
 
 def test4():
-    i = 9
+    i = 9125371
 
     o = ex1.num_len(i)
     return i, o
