@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c88eb041-06eb-43b1-9648-1d28e59cd81f" name="Changes" comment="build&amp;refactor: IDEA files added &amp; project re-organized">
+    <list default="true" id="c88eb041-06eb-43b1-9648-1d28e59cd81f" name="Changes" comment="test: tests modified">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Part3_4/OOProject/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Part3_4/OOProject/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +25,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/yonka2019/M-Tasks.git&quot;,
-    &quot;accountId&quot;: &quot;3e586234-14cc-438e-859e-435613a2015e&quot;
+    &quot;accountId&quot;: &quot;5b16aeec-a6d3-4e79-99a2-24f2828a3b09&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -35,16 +36,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jonatan_cyray/PycharmProjects/M-Tasks/Part2/Tests/main.py&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/Mamas/MProject/Part2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Console Colors"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jonatan_cyray\PycharmProjects\M-Tasks\Part2\Modules" />
@@ -56,9 +57,6 @@
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="SDK_NAME" value="Python 3.12 (Part2)" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -68,7 +66,7 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tests/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
@@ -84,7 +82,7 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
-    <configuration>C:\Users\jonatan_cyray\AppData\Roaming\Subversion</configuration>
+    <configuration>C:\Users\yonka\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -102,12 +100,21 @@
       <option name="project" value="LOCAL‎" />
       <updated>1715979902554</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="test: tests modified">
+      <option name="closed" value="true" />
+      <created>1716051959930</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716051959930</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="build&amp;refactor: IDEA files added &amp; project re-organized" />
-    <option name="LAST_COMMIT_MESSAGE" value="build&amp;refactor: IDEA files added &amp; project re-organized" />
+    <MESSAGE value="test: tests modified" />
+    <option name="LAST_COMMIT_MESSAGE" value="test: tests modified" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
